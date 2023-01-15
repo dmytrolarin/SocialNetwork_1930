@@ -20,6 +20,8 @@ from registrationapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reg_form/', show_reg_form),
-    path('reg_success/', show_reg_success, name = "reg_success")
-    
+    path('reg_success/', show_reg_success, name = "reg_success"),
+    path('login/', show_login_form, name = 'login_form'),
+    path('welcome/',welcome, name = "welcome"),
+    path('logout/',user_logout, name = "logout"),
 ]
